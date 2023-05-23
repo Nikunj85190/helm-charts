@@ -1783,6 +1783,9 @@ kube-state-metrics:
 ##
 nodeExporter:
   enabled: true
+  volumeMounts:
+    - name: my-mount
+      mountPath: /path/to/mount
 
 ## Configuration for prometheus-node-exporter subchart
 ##
